@@ -1,12 +1,34 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
+import { CounterComponent } from './counter/counter.component';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterOutlet,FormsModule,CounterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
+
 export class AppComponent {
-  title = 'myapp';
+ title = 'sanjay';
+
+ getName(){
+  return "sura";
+ }
+
+ user =  {
+  name : "sanjay",
+  age :20
+ }
+
+ clickCount = 0;
+
+ ClickMe(){
+  this.clickCount++;
+ }
+
 }
