@@ -7,6 +7,9 @@
 
 <h1>Clicked {{clickCount}} times</h1>
 <button (click)="ClickMe()" >Click me!</button>
+<div>
+    <app-counter></app-counter>
+    <app-demo (carAdded)="oncarAdded($event)"></app-demo>
+</div>
 
-<app-counter></app-counter>
 

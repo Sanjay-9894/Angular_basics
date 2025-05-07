@@ -1,1 +1,8 @@
-<p>demo works!</p>
+<p [appHighlight]="''">demo works!</p>
+<form (submit)="onSubmit()">
+    <label for = "">car</label>
+    <input type="text" [(ngModel)]="carName" name="carName">
+    <button type="submit">Submit</button>
+</form>
+
+
